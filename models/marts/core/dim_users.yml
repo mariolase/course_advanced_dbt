@@ -71,3 +71,9 @@ models:
         description: '{{ doc("country") }}'
         tests:
           - not_null
+
+      - name: count_of_subscriptions
+        description: number of subscriptions per user.
+
+      - name: first_subscription_starts_at
+        description: date of first subscription.
