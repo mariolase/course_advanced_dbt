@@ -1,0 +1,20 @@
+version: 2
+
+macros:
+  - name: rolling_average_n_periods
+    description: to calculate a rolling average over a number of periods
+    docs:
+      show: true
+    arguments:
+      - name: column_name
+        type: string
+        description: name of the colum to average
+      - name: partition_by
+        type: string
+        description: partition of the periods
+      - name: order_by
+        type: string
+        description: order the partitions before taking the last n
+      - name: n
+        type: integer
+        description: number of periods to average by
