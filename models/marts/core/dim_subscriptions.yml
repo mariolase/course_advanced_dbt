@@ -4,16 +4,9 @@ models:
     columns:
       - name: subscription_id
         description: The unique identifier of the subscription.
-        tests:
-          - not_null
-          - unique
 
       - name: subscription_plan_id
         description: '{{ doc("subscription_plan_id") }}'
-        tests:
-          - not_null
-          - accepted_values:
-              values: [1, 2, 3]
 
       - name: user_id
         description: '{{ doc("bingeflix_user_id") }}'

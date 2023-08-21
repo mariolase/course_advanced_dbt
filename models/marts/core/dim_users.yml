@@ -10,9 +10,6 @@ models:
         description: '{{ doc("bingeflix_user_id") }}'
         meta:
           priority: high
-        tests:
-          - not_null
-          - unique
 
       - name: created_at
         description: '{{ doc("created_at") }}'

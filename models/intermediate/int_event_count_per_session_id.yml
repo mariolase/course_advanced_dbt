@@ -5,8 +5,8 @@ models:
       - name: session_id
         description: The unique identifier for the session.
         tests:
-          - not_null
           - unique
+          - not_null
 
       - name: user_logged_in_count
         description: The number of times the user logged in during the specified session.

@@ -6,6 +6,7 @@ models:
         description: '{{ doc("subscription_plan_id") }}'
         tests:
           - not_null
+          - unique
 
       - name: user_id
         description: '{{ doc("bingeflix_user_id") }}'
